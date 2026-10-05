@@ -1,0 +1,185 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo":{
+    "type": "none",
+  },
+  "display": {
+    "size": {
+      "binaryPrefix": "si",
+      "ndigits": 1
+    },
+    "separator": "   ",
+    "color": {
+      "keys": "red",
+      "title": "red"
+    }
+  },
+  "modules": [
+
+/*      HINTS!!11!!!!!
+   Each block is 41 characters long ("How is 'Hardware' and 'Software' centered then?" Shush!)
+   The sides have 3 space padding
+   The separator is 3 spaces
+   Also not forry for the syntax not being consistand, this file was written over 5 configs and a month
+*/
+    {
+      "type": "custom",
+      "format": "{#1;white}   _____ _   {#}{#1;red}_{#}{#1;white}     _   _____       _   {#}"
+    },
+    {
+      "type": "custom",
+      "format": "{#1}  |_   _| |_{#}{#1;red}|_|{#}{#1}___| |_|  _  |___ _| |  {#}"
+    },
+    {
+      "type": "custom",
+      "format": "{#1}    | | |   | |   | '_|   __| .'| . |  {#}"
+    },
+    {
+      "type": "custom",
+      "format": "{#1}    |_| |_|_|_|_|_|_,_|__|  |__,|___|  {#}"
+    },
+    {
+      "type": "custom",
+      "format": " ",
+    },
+    {
+      "type": "custom",
+      "format": "────────────────Software───────────────",
+    },
+    {
+      "type": "custom",
+      "format": "|                                     |",
+    },
+    {
+      "type": "os",
+      "key": "{#white}|{#}   {#1;red}OS{#}       ",
+      "format": "{name} {version-id}           |"
+    },
+    {
+      "type": "disk",
+      "key": "{#white}|{#}   {#1;red}AGE{#}      ",
+      "folders": "/",
+      "format": "{days} days               |",
+    },
+    {
+      "type": "uptime",
+      "key": "{#white}|{#}   {#1;red}UPTIME{#}   ",
+      "format": "{days} Days & {hours>2} Hours     |",
+    },
+    {
+      "type": "kernel",
+      "format": "{release<19}   |",
+      "key": "{#white}|{#}   {#1;red}KERNEL{#}   "
+    },
+    {
+      "type": "packages",
+      "key": "{#white}|{#}   {#1;red}PKGS{#}     ",
+      "format": "{all<19}   |"
+    },
+    {
+      "type": "de",
+      "key": "{#white}|{#}   {#1;red}DE{#}       ",
+      "format": "{pretty-name<19}   |"
+    },
+    {
+      "type": "terminal",
+      "format": "{pretty-name<19}   |",
+      "key": "{#white}|{#}   {#1;red}TERMINAL{#} "
+    },
+    {
+      "type": "custom",
+      "format": "|                                     |",
+    },
+    {
+      "type": "custom",
+      "format": "───────────────────────────────────────",
+    },
+    {
+      "type": "custom",
+      "format": "                                     ",
+    },
+    {
+      "type": "custom",
+      "format": "────────────────Hardware───────────────",
+    },
+    {
+      "type": "custom",
+      "format": "|                                     |",
+    },
+    {
+      "type": "host",
+      "key": "{#white}|{#}   {#1;red}MODEL{#}    ",
+      "format": "T14 Gen 1             |"
+    },
+    {
+      "type": "cpu",
+      "key": "{#white}|{#}   {#1;red}CPU{#}      ",
+      "format": "Ryzen 5 PRO 4650U     |"
+    },
+    {
+      "type": "gpu",
+      "key": "{#white}|{#}   {#1;red}GPU{#}      ",
+      "format": "Radeon Vega 6         |"
+    },
+    {
+      "type": "memory",
+      "key": "{#white}|{#}   {#1;red}RAM{#}      ",
+      "format": "{used<9} /   16 GB   |"
+    },
+    {
+      "type": "swap",
+      "key": "{#white}|{#}   {#1;red}SWAP{#}     ",
+      "format": "{used<9} /   20 GB   |",
+    },
+    {
+      "type": "disk",
+      "folders": "/",
+      "key": "{#white}|{#}   {#1;red}DISK{#} {#1}/{#}   ",
+      "format": "{size-used<9} /  256 GB   |"
+    },
+    {
+      "type": "disk",
+      "folders": "/usb",
+      "key": "{#white}|{#}   {#1;red}DISK{#} {#1}/usb{#}",
+      "format": "{size-used<9} /   64 GB   |",
+    },
+    {
+      "type": "custom",
+      "format": "|                                     |",
+    },
+    {
+      "type": "custom",
+      "format": "───────────────────────────────────────",
+    },
+    {
+      "type": "custom",
+      "format": "                                     ",
+    },
+    {
+      "type": "custom",
+      "format": "────────────────Network────────────────",
+    },
+    {
+      "type": "custom",
+      "format": "|                                     |",
+    },
+    {
+      "type": "wifi",
+      "key": "{#white}|{#}  {#1;red}WIFI{#}     ",
+      "format": "{ssid<19}    |"
+    },
+    {
+      "type": "localip",
+      "key": "{#white}|{#}  {#1;red}LAN{#}      ",
+      "format": "{ipv4<19}    |"
+    },
+    {
+      "type": "custom",
+      "format": "|                                     |",
+    },
+    {
+      "type": "custom",
+      "format": "───────────────────────────────────────"
+    },
+  ]
+}
